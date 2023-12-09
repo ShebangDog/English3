@@ -7,3 +7,8 @@ lazy val root = (project in file("."))
     name := "English",
     idePackagePrefix := Some("dog.shebang.english")
   )
+
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest-diagrams" % "3.2.16",
+  "org.scalatest" %% "scalatest-funspec" % "3.2.15",
+)
